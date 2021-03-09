@@ -2,20 +2,22 @@ header {
     border-bottom: 1px solid rgba(230, 230, 230, 1);
     display: flex;
     flex-direction: row;
-    padding: 20px 40px;
-    align-items: flex-start;  
+    padding: 20px 10px 20px 10px;
+    position: relative;
+
 }
 
 .loginNav {
     color: rgba(26, 137, 23, 1);
-    display: inline-flex;
+    display: flex;
+    flex-grow: 1;
 }
 
 #getstartedContainer {
     border: rgba(26, 137, 23, 1) solid 1px;
     border-radius: 4px;
     padding: 7px 16px 9px;
-    display: inline-block;
+
 }
 
 #signinContainer {
@@ -23,7 +25,14 @@ header {
 }
 
 #headerLogoContainer {
-    margin-right: 85%;
+    flex-grow: 100;
+
+}
+
+#headerLogoContainer img {
+    height: 40px;
+    width: 40px;
+ 
 }
 
 body {
@@ -36,9 +45,6 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-}
-
-.loginNav a {
     color: rgba(26, 137, 23, 1);
 }
 
@@ -59,5 +65,29 @@ main {
 .blogSubTitle {
     color: rgba(117, 117, 117, 1);
     font-size: 22px;
+}
 
+.targetUserLink {
+    font-weight: 400;
+    margin-right: .5rem;
+}
+
+.targetContainer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.targetUserImg {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin-right: .5rem;
+}  
+
+article {
+    margin-top: 24px;
+    font-size: 21px;
+    color: rgba(41, 41, 41, 1);
+    line-height: 32px;
 }
