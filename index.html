@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
-    <title>Blog - </title>
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Blog - Hole in a space</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="icon" type="image/png" href="logo.png" />
   </head>
 
   <body>
@@ -17,7 +20,7 @@
       </div>
       <nav class="loginNav">
         <div class="signinContainer darkMode"><a href="#">Sign in</a></div>
-        <div class="getstartedContainer darkMode"> 
+        <div class="getstartedContainer darkMode">
           <a href="#">Get started</a>
         </div>
       </nav>
@@ -46,46 +49,109 @@
 
       <article>
         <p>
-          The are many posts on the web about topology. It is easy to visualize
-          for a non-mathematician how we can convert a doughnut in a cup of
-          coffe. And, in fact, this conversion is not as trivial as one could
-          expect. The are many posts on the web about topology. It is easy to
-          visualize for a non-mathematician how we can convert a doughnut in a
-          cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect. The are many posts on the web about topology. It is easy
-          to visualize for a non-mathematician how we can convert a doughnut in
-          a cup of coffe. And, in fact, this conversion is not as trivial as one
-          could expect.
+          There are some questions that are really easily posed, have and
+          obvious answer, but are in fact really, really hard to answer in a
+          mathematically satisfactory way. One example is: <br />
+
+          <i class="p-center"> How many wholes does a doughnut have? </i>
+
+          The intuitive, and correct, answer is <em> ONE </em>. But, in order to
+          prove this, we will have to formalize the questions in a
+          mathematically correct language. The key fact is that <br />
+
+          <i class="p-center">
+            the rules of geometry and calculus fail over weird spaces.</i
+          >
+        </p>
+
+        <h2>Homology</h2>
+
+        <p>
+          Homology answers two questions. How to define what a hole is and how
+          to distinguish between different types of holes. For example, consider
+          a sphere and a circle. Both have a hole, but the hole in the sphere
+          is, in a certain way, higher dimensional. The idea behing the homology
+          can be described using the following myth:
+        </p>
+
+        <p>
+          Given a certain loop on a space, there is always a region of space
+          that it bounds. This is false, in general. For example, if we consider
+          that our loop is on a doughnut, there is no region bounding it. Why?
+        </p>
+
+        <em class="p-center"> Because there is a hole! </em>
+
+        <p>
+          But let us be precise, when we say loop, we mean a k-chain. That is, a
+          continuous map from the unit interval cross itself k times to our
+          shape. For example, a 1-chain is a curve. A 2-chain is a curvy square.
+          A 3-chain is a curvy cube with the insied filled in.
+        </p>
+        <p>
+          We can now define the boundary of a k-chain c (with the intuitive
+          meaning) which is a (k-1)-chain. With this language, a hole is a chain
+          with zero boundary that's not the boundary of anything else.
+
+          <i class="p-center">
+            A hole is a chain with zero boundary that's not the boundary of
+            anything else.</i
+          >
+          This fact defines a group called <em> k-th homology group</em>, which
+          can be used to count the holes. For example,
+        </p>
+
+        <p>
+          For example, in the case of a doughnut, it can be proven that its
+          1-homology group over the real numbers has dimension 1, this means
+          that it has one (one-dimensional) hole. But, in contrast, the sphere's
+          1-homology group has dimension 0. However, its 2-homology group has
+          dimension 1, i.e it has one (2-dimensional) hole.
+        </p>
+        <h2>Cohomology</h2>
+
+        <p>
+          Here comes the more surprising part. Cohomology detects holes in a
+          space by studying functions defined on that space. The idea behing the
+          cohomology can be described using the following myth:
+        </p>
+
+        <p>
+          If a function has derivative zero, then it is constant. That's false,
+          in general. For example, if we define a function from the reals minus
+          the zero to the reals being constant 1 at the negatives and constant
+          equal 2 at the positives, then its derivative is zero everywhere. But
+          the function is not constant, and this is because there is a hole at
+          0. We can use this as a test to detect 0-dimensional holes.
+        </p>
+
+        <p>
+          But, what about higher dimensional holes? This is a little bit subtle,
+          and we will not deepen in that direction. There is whole theory of
+          differential forms which is needed. This forms define a cochain
+          complex which is, in some sense, dual to the chain complex defined in
+          the previous section. Insted of having a going-down arrow called
+          boundary, here we have a going-up arrow called exterior derivative.
+          The lack of certain properties attached to this exterior derivative
+          can be used to detect holes through some groups called
+          <em> De Rham cohomology groups.</em> The key fact here is that, <br />
+
+          <i class="p-center">
+            A hole is a form with zero derivative that's not the derivative of
+            anything else.
+          </i>
+          Does it looks familiar?
+        </p>
+
+        <h2>De Rham's theorem</h2>
+
+        <p>
+          This theorem says that the k-th homology group and the k-th cohomology
+          group are isomorphic, and the isomorphism is given by the integral.
+          This is, to be honest, mindblowing. The meaning of this theorem is
+          that both ways of measuring holes actually measure the same holes!
+          This is very deep, because it links two fields of mathematics,
+          geometry and calculus.
         </p>
       </article>
 

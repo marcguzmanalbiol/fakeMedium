@@ -175,3 +175,18 @@ footer a {
   background-color: rgb(63, 61, 61);
   color: white;
 }
+
+.p-center {
+  margin: 10px 0 10px 0;
+  display: block;
+  text-align: center;
+}
+
+i {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+em {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+}
